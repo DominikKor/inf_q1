@@ -26,7 +26,7 @@ public class Wettlauf {
             new Laeufer("Sos Los Fos", true),
             new Laeufer("Maria Maria", true),
             new Laeufer("Julius Caesar", true),
-            new Laeufer("Sabine Bein", true),
+            new Laeufer("Sabine die Biene", true),
         });
 
         wettlauf.rennenLaufen();
