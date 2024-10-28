@@ -10,7 +10,7 @@ public class Wettlauf {
     }
 
     public Laeufer[] getLaeuferfeld() {
-        return laeuferfeld;
+        return this.laeuferfeld;
     }
 
     public void setLaeuferfeld(Laeufer[] laeuferfeld) {
@@ -36,7 +36,7 @@ public class Wettlauf {
     }
 
     public void anDenStart(int bahn, Laeufer laeufer) {
-        laeuferfeld[bahn] = laeufer;
+        this.laeuferfeld[bahn] = laeufer;
     }
 
     public static double zeitMessen() {

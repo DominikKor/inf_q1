@@ -41,6 +41,6 @@ public class Laeufer implements Comparable<Laeufer> {
 
     @Override
     public String toString() {
-        return "Laeufer(\"" + this.name + "\", " + this.zeit + "\", " + (this.qualifiziert ? "" : "dis") + "qualifiziert)";
+        return "Laeufer(\"" + this.name + "\", " + this.zeit + "s, " + (this.qualifiziert ? "" : "dis") + "qualifiziert)";
     }
 }
