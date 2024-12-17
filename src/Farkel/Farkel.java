@@ -47,4 +47,7 @@ public class Farkel {
     public Wuerfel[] gibWuerfelSet() {
         return this.wuerfelSet;
     }
+
+    public void method() {
+    }
 }

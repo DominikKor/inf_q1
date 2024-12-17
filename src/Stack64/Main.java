@@ -138,6 +138,32 @@ public class Main {
         return stack;
     }
 
+
+    public static Stack<String> FAKEsortStringStackAlphabetically(Stack<String> stack) {
+        Stack<String> tempStack = new Stack<String>();
+
+
+        tempStack.push(stack.pop());
+        while (true) {
+            String top = stack.pop();
+            if (top == null) {
+                break;
+            }
+
+            if (getNumber(top) < getNumber(tempStack.top())) {
+                stack.push(tempStack.pop());
+            }
+
+            tempStack.push(top);
+        }
+
+        while (!tempStack.isEmpty()) {
+            stack.push(tempStack.pop());
+        }
+
+        return stack;
+    }
+
     public static Integer getNumber(String s) {
         return Integer.parseInt(s.replaceAll("[^0-9]", ""));
     }
